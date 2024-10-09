@@ -1,101 +1,188 @@
-import Image from "next/image";
+// import Link from "next/link"
+import Image from 'next/image'
+// import logo from '../app/public/images/Profil.jpg'
+import { CircleFadingPlus, Dot, Dribbble, FileDown, Github, Instagram, Linkedin, PanelsTopLeft } from "lucide-react";
+import fotoku from './public/images/PolosNew.png';
+import laravel from '../app/public/icon/laravel.png';
+import next from '../app/public/icon/nextjs.png';
+import tailwind from '../app/public/icon/tailwind.png';
+import flutter from '../app/public/icon/flutter.png';
+import photoshop from '../app/public/icon/Photoshop.png';
+import figma from '../app/public/icon/Figma.png';
+import telu from '../app/public/images/telu.png';
+import logoreact from '../app/public/images/logoreact.png';
+import vecteezy from '../app/public/images/vecteezy.png';
 
-export default function Home() {
+
+export default function Page() {
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <div className="flex flex-col size-full">
+        {/* Main Content */}
+        <main className="bg-[#E9E9E9] min-h-screen pt-[80px] flex">
+          <div className="relative w-[70%] pl-24 pr-14">
+            <div className="flex justify-between items-end">
+              <div className="font-bold">
+                <div className="flex flex-col my-16 gap-0">
+                  <a className="text-[150px] text-[#FC9326] leading-none font-poppins">
+                    Hi, I&apos;m Rafi
+                  </a>
+                  <a className="text-[60px] text-[#323232] font-poppins leading-none">
+                    Front End Developer
+                  </a>
+                </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+                <div className="mt-11">
+                  <p className="text-[35px] text-[#323232]">Lets Work Together</p>
+                  <p className="text-[#707070] font-inter font-medium">Creating user experience and visual appealing design</p>
+                  <div className="flex flex-row mt-5 gap-4">
+                    <div className="bg-[#323232] flex gap-2 p-2 rounded-lg">
+                      <CircleFadingPlus className="w-5 text-white" />
+                      <a className="text-white">
+                        Hire Me
+                      </a>
+                    </div>
+                    <div className="border-2 border-[#707070] flex gap-2 p-2 rounded-lg">
+                      <FileDown className="w-5 text-[#707070]" />
+                      <a className="text-[#323232]">
+                        Download CV
+                      </a>
+                    </div>
+                    <div className="border-2 border-[#707070] flex gap-2 p-2 rounded-lg">
+                      <PanelsTopLeft className="w-5 text-[#707070]" />
+                      <a className="text-[#323232]">
+                        Projects
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8">
+                  <div className="flex flex-row text-center">
+                    <span className="w-28">
+                      <p className="font-poppins text-[40px]">5+</p>
+                      <p className="text-[#707070] font-poppins">My Projects Done</p>
+                    </span>
+                    <span className="w-64">
+                      <p className="font-poppins text-[40px]">6+</p>
+                      <p className="text-[#707070] font-poppins">Completed Licenses & Certifications</p>
+                    </span>
+                    <span className="w-28">
+                      <p className="font-poppins text-[40px]">4+</p>
+                      <p className="text-[#707070] font-poppins">Years Experience</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-5 items-center justify-center">
+                <Image
+                  src={laravel.src}
+                  alt="Laravel"
+                  width={48}
+                  height={48}
+                />
+                <Image
+                  src={next.src}
+                  alt="Nextjs"
+                  width={48}
+                  height={48}
+                />
+                <Image
+                  src={logoreact.src}
+                  alt="React"
+                  width={48}
+                  height={48}
+                />
+                <Image
+                  src={tailwind.src}
+                  alt="Tailwind"
+                  width={48}
+                  height={40}
+                />
+                <Image
+                  src={flutter.src}
+                  alt="Flutter"
+                  width={48}
+                  height={48}
+                />
+                <Image
+                  src={photoshop.src}
+                  alt="Photoshop"
+                  width={48}
+                  height={48}
+                />
+                <Image
+                  src={figma.src}
+                  alt="Figma"
+                  width={48}
+                  height={48}
+                />
+              </div>
+            </div>
+
+            <div className="pt-11 flex justify-center items-center gap-32 w-full">
+              {/* Telkom University*/}
+              <div className="flex items-center gap-4">
+                <Image
+                  src={telu}
+                  // width={10}
+                  height={40}
+                  quality={100}
+                  alt="Picture of the author"
+                  className=""
+                />
+                <div>
+                  <p className="font-medium">Currently studying in</p>
+                  <p className="text-red-600 font-bold">Telkom University Surabaya</p>
+                  <p className="text-gray-500 font-medium">Feb 2021 - Present | Grade: 3.85</p>
+                </div>
+              </div>
+
+              {/* Vecteezy */}
+              <div className="flex items-center gap-4">
+                <Image
+                  src={vecteezy}
+                  // width={10}
+                  height={40}
+                  quality={100}
+                  alt="Picture of the author"
+                  className=""
+                />
+                <div>
+                  <p className="font-medium">Currently freelance in Jul 2024 - Present</p>
+                  <p className="text-[#FF7900] font-bold">Vecteezy Contributor - Graphic Designer</p>
+                  <p className="text-gray-500 font-medium">Jul 2024 - Present</p>
+                </div>
+              </div>
+            </div>
+
+            <footer className="absolute bottom-0 left-0 right-0">
+              <div className="bg-[#323232] py-5 px-16 flex items-center justify-between">
+                <div className="flex items-center text-white gap-2">
+                  <Dot />
+                  <span className="font-inter font-bold">Follow Me</span>
+                  <Dribbble />
+                  <Instagram />
+                  <Github />
+                  <Linkedin />
+                </div>
+                <div className="text-white font-poppins">
+                  &copy; Rafi Ardinata Riskiansyah
+                </div>
+              </div>
+            </footer>
+          </div>
+          <div className="w-[30%]">
+            <div className="bg-[#FC9326] bg-center w-full h-full bg-cover bottom-auto" style={{
+              backgroundImage: `url(${fotoku.src})`,
+            }}>
+            </div>
+          </div>
+        </main>
+
+      </div >
+    </>
   );
 }
