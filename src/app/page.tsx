@@ -12,6 +12,8 @@ import figma from '../app/public/icon/Figma.png';
 import telu from '../app/public/images/telu.png';
 import logoreact from '../app/public/images/logoreact.png';
 import vecteezy from '../app/public/images/vecteezy.png';
+// import HyperText from '@/components/ui/hyper-text';
+import NumberTicker from '@/components/ui/number-ticker';
 
 
 export default function Page() {
@@ -24,59 +26,67 @@ export default function Page() {
           <div className="relative w-[70%] pl-24 pr-14">
             <div className="flex justify-between items-end">
               <div className="font-bold">
-                <div className="flex flex-col my-16 gap-0">
-                  <a className="text-[150px] text-[#FC9326] leading-none font-poppins">
+                <div className="flex flex-col mt-16 gap-0">
+                  <a className="text-[150px] text-[#FC9326] animate-slidein leading-none font-poppins">
                     Hi, I&apos;m Rafi
                   </a>
-                  <a className="text-[60px] text-[#323232] font-poppins leading-none">
+                  <a className='text-[50px] font-bold font-poppins'>
                     Front End Developer
                   </a>
+                  {/* <HyperText
+                    phrases={["Front End Developer", "UI/UX Designer", "Graphic Designer"]}
+                    duration={3500} 
+                    className='text-[50px] font-bold font-poppins'
+                  /> */}
                 </div>
 
-                <div className="mt-11">
+                <div className="mt-8">
                   <p className="text-[35px] text-[#323232]">Lets Work Together</p>
                   <p className="text-[#707070] font-inter font-medium">Creating user experience and visual appealing design</p>
                   <div className="flex flex-row mt-5 gap-4">
-                    <div className="bg-[#323232] flex gap-2 p-2 rounded-lg">
+                    <button className="bg-[#323232] flex gap-2 p-2 rounded-lg transform hover:-translate-y-1 transition duration-400">
                       <CircleFadingPlus className="w-5 text-white" />
-                      <a className="text-white">
+                      <a className="text-white ">
                         Hire Me
                       </a>
-                    </div>
-                    <div className="border-2 border-[#707070] flex gap-2 p-2 rounded-lg">
+                    </button>
+                    <button className="border-2 border-[#707070] flex gap-2 p-2 rounded-lg transform hover:-translate-y-1 transition duration-400">
                       <FileDown className="w-5 text-[#707070]" />
                       <a className="text-[#323232]">
                         Download CV
                       </a>
-                    </div>
-                    <div className="border-2 border-[#707070] flex gap-2 p-2 rounded-lg">
+                    </button>
+                    <button className="border-2 border-[#707070] flex gap-2 p-2 rounded-lg transform hover:-translate-y-1 transition duration-400">
                       <PanelsTopLeft className="w-5 text-[#707070]" />
                       <a className="text-[#323232]">
                         Projects
                       </a>
-                    </div>
+                    </button>
                   </div>
                 </div>
 
                 <div className="mt-8">
                   <div className="flex flex-row text-center">
                     <span className="w-28">
-                      <p className="font-poppins text-[40px]">5+</p>
+                      <NumberTicker value={5} className='font-poppins text-[40px]' />
+                      <span className='font-poppins text-[40px]'>+</span>
                       <p className="text-[#707070] font-poppins">My Projects Done</p>
                     </span>
                     <span className="w-64">
-                      <p className="font-poppins text-[40px]">6+</p>
+                      <NumberTicker value={6} className='font-poppins text-[40px]' />
+                      <span className='font-poppins text-[40px]'>+</span>
                       <p className="text-[#707070] font-poppins">Completed Licenses & Certifications</p>
                     </span>
                     <span className="w-28">
-                      <p className="font-poppins text-[40px]">4+</p>
+                      <NumberTicker value={4} className='font-poppins text-[40px]' />
+                      <span className='font-poppins text-[40px]'>+</span>
                       <p className="text-[#707070] font-poppins">Years Experience</p>
                     </span>
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-col gap-5 items-center justify-center">
+              <div className="flex flex-col gap-5 items-center justify-center animate-slidein">
                 <Image
                   src={laravel.src}
                   alt="Laravel"
@@ -122,7 +132,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="pt-11 flex justify-center items-center gap-32 w-full">
+            <div className="pt-11 flex items-center gap-16 animate-slidein">
               {/* Telkom University*/}
               <div className="flex items-center gap-4">
                 <Image
@@ -156,6 +166,22 @@ export default function Page() {
                   <p className="text-gray-500 font-medium">Jul 2024 - Present</p>
                 </div>
               </div>
+
+              <div className="flex items-center gap-4">
+                <Image
+                  src={telu}
+                  // width={10}
+                  height={40}
+                  quality={100}
+                  alt="Picture of the author"
+                  className=""
+                />
+                <div>
+                  <p className="font-medium">Currently internship in</p>
+                  <p className="text-red-600 font-bold">Laboratory Active Talent - Design Graphic</p>
+                  <p className="text-gray-500 font-medium">Position in Front End Web Developer</p>
+                </div>
+              </div>
             </div>
 
             <footer className="absolute bottom-0 left-0 right-0">
@@ -175,7 +201,7 @@ export default function Page() {
             </footer>
           </div>
           <div className="w-[30%]">
-            <div className="bg-[#FC9326] bg-center w-full h-full bg-cover bottom-auto" style={{
+            <div className="bg-[#FC9326] animate-slidein bg-center w-full h-full bg-cover bottom-auto" style={{
               backgroundImage: `url(${fotoku.src})`,
             }}>
             </div>

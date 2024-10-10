@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Navbar = () => {
     return (
-        <nav className="fixed top-0 left-0 right-0 bg-white py-4 px-24 shadow-md">
+        <nav className="fixed top-0 left-0 right-0 bg-white py-4 px-24 shadow-md animate-slidein">
             <div className="font-poppins flex items-center justify-between">
                 <a href="/" className="flex items-center gap-2">
                     <Image
@@ -34,12 +34,12 @@ const Navbar = () => {
                         <MoonStar className="w-5 cursor-pointer" />
                     </li>
                     <li>
-                        <div className="bg-[#323232] flex gap-2 p-3 rounded-lg">
+                        <button className="bg-[#323232] flex gap-2 p-3 rounded-lg transform hover:-translate-y-1 transition duration-400">
                             <CircleFadingPlus className="w-5 text-white" />
                             <a className="text-white">
                                 Hire Me
                             </a>
-                        </div>
+                        </button>
                     </li>
                 </ul>
             </div>
