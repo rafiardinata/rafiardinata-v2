@@ -30,7 +30,7 @@ export default function Page() {
                   <a className="text-[150px] text-[#FC9326] animate-slidein leading-none font-poppins">
                     Hi, I&apos;m Rafi
                   </a>
-                  <a className='text-[50px] font-bold font-poppins'>
+                  <a className='text-[50px] font-bold font-poppins text-[#323232]'>
                     Front End Developer
                   </a>
                   {/* <HyperText
@@ -52,7 +52,7 @@ export default function Page() {
                     </button>
                     <button className="border-2 border-[#707070] flex gap-2 p-2 rounded-lg transform hover:-translate-y-1 transition duration-400">
                       <FileDown className="w-5 text-[#707070]" />
-                      <a className="text-[#323232]">
+                      <a href='../app/public/files/CV-New-Rafi Ardinata Riskiansyah.pdf' title='' className="text-[#323232]" download>
                         Download CV
                       </a>
                     </button>
@@ -92,42 +92,49 @@ export default function Page() {
                   alt="Laravel"
                   width={48}
                   height={48}
+                  className='transform hover:-translate-y-1 transition opacity-50 hover:opacity-100 duration-400 cursor-pointer'
                 />
                 <Image
                   src={next.src}
                   alt="Nextjs"
                   width={48}
                   height={48}
+                  className='transform hover:-translate-y-1 transition opacity-50 hover:opacity-100 duration-400 cursor-pointer'
                 />
                 <Image
                   src={logoreact.src}
                   alt="React"
                   width={48}
                   height={48}
+                  className='transform hover:-translate-y-1 transition opacity-50 hover:opacity-100 duration-400 cursor-pointer'
                 />
                 <Image
                   src={tailwind.src}
                   alt="Tailwind"
                   width={48}
                   height={40}
+                  className='transform hover:-translate-y-1 transition opacity-50 hover:opacity-100 duration-400 cursor-pointer'
                 />
                 <Image
                   src={flutter.src}
                   alt="Flutter"
                   width={48}
                   height={48}
+                  className='transform hover:-translate-y-1 transition opacity-50 hover:opacity-100 duration-400 cursor-pointer'
                 />
                 <Image
                   src={photoshop.src}
                   alt="Photoshop"
                   width={48}
                   height={48}
+                  className='transform hover:-translate-y-1 transition opacity-50 hover:opacity-100 duration-400 cursor-pointer'
                 />
                 <Image
                   src={figma.src}
                   alt="Figma"
                   width={48}
                   height={48}
+                  className='transform hover:-translate-y-1 transition opacity-50 hover:opacity-100 duration-400 cursor-pointer'
                 />
               </div>
             </div>
